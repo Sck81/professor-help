@@ -47,7 +47,17 @@ app.get('/final2.html',function(req,res){
     });
     
 });
-
+//write review
+app.get('/review',function(req,res){   
+    con.query("SELECT * FROM classes", function(err,result){
+        if (err){
+            console.log("ERROR");
+            return;
+        }
+        res.render("final5");
+    });
+    
+});
 //comments page
 app.get('/final4/:ligma',function(req,res){  
     var urlarr= req.params.ligma;
