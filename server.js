@@ -3,7 +3,7 @@ var express=require('express');
 var app= express();
 
 var http=require('http');
-var mysql=require('mysql');
+const mysql=require('mysql');
 
 //process.env.PORT || 5000
 var server= app.listen(process.env.PORT || 5000,function(){
